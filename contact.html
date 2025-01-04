@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - homeplante</title>
+  <link rel="stylesheet" href="CSS.css">
+
+</head>
+<body> 
+ <section class="formulaire"> <h1>Contactez-nous</h1>
+  <form action="http://127.0.0.1:5000/submit" method="post">
+    
+    <fieldset>
+      <legend>Informations personnelles</legend>
+      <label for="name">Nom :</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+  
+      <label for="email">Email :</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label>Genre :</label><br>
+      <input type="radio" id="homme" name="genre" value="Homme" required>
+      <label for="homme">Homme</label><br>
+      <input type="radio" id="femme" name="genre" value="Femme">
+      <label for="femme">Femme</label><br><br>
+    </fieldset>
+    
+    
+    <fieldset>
+      <legend>Localisation et message</legend>
+      <label for="pays">Pays :</label><br>
+      <select id="pays" name="pays" required>
+        <option value="">Sélectionnez votre pays</option>
+        <option value="Maroc">Maroc</option>
+        <option value="France">France</option>
+        <option value="Belgique">Belgique</option>
+        <option value="Maroc">Algerie</option>
+        <option value="France">Tunisie</option>
+        <option value="Belgique">Tilande</option>
+        <option value="Maroc">Chine</option>
+        
+      </select><br><br>
+  
+      <label for="message">Message :</label><br>
+      <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+    </fieldset>
+  
+    <input type="submit" value="Envoyer">
+  </section> 
+  </form>
+    
+</body>
+</html>
